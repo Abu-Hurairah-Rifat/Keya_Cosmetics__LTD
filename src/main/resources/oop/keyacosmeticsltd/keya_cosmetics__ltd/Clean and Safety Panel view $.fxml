@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="storeCleanPanelView" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.CleanAndSafetyPanelView">
+   <children>
+      <Label fx:id="tittleStoreCleanAndSafetyPanel" layoutX="136.0" layoutY="14.0" prefHeight="30.0" prefWidth="326.0" text="Store Cleanliness and Safety Panel">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="inspectionDateLabel" layoutX="14.0" layoutY="73.0" text="Inspection Date:" />
+      <Label fx:id="inspectorNameLabel" layoutX="13.0" layoutY="124.0" text="Inspector Name:" />
+      <Label fx:id="InspectionNotesLabel" layoutX="447.0" layoutY="73.0" text="Inspection Notes:" />
+      <Label fx:id="ratingLabel" layoutX="14.0" layoutY="171.0" text="Cleanliness Rating:" />
+      <TextField fx:id="dateField" layoutX="113.0" layoutY="69.0" />
+      <TextField fx:id="inspectorNameField" layoutX="113.0" layoutY="120.0" />
+      <TextArea fx:id="noteField" layoutX="394.0" layoutY="102.0" prefHeight="43.0" prefWidth="200.0" />
+      <CheckBox fx:id="goodCheckBox" layoutX="122.0" layoutY="171.0" mnemonicParsing="false" text="Good" />
+      <CheckBox fx:id="averageCheckBox" layoutX="180.0" layoutY="171.0" mnemonicParsing="false" text="Average" />
+      <TableView fx:id="table" layoutX="83.0" layoutY="217.0" prefHeight="132.0" prefWidth="446.0">
+        <columns>
+          <TableColumn fx:id="inspectorNameTable" prefWidth="177.14281463623047" text="Inspector Name" />
+          <TableColumn fx:id="dateTable" prefWidth="138.2857666015625" text="Date" />
+            <TableColumn fx:id="rateTable" prefWidth="130.85708618164062" text="Rate" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#saveButtonAction" text="Save" />
+      <Button layoutX="67.0" layoutY="361.0" mnemonicParsing="false" onAction="#resetButtonAction" text="Reset" />
+      <Button layoutX="529.0" layoutY="361.0" mnemonicParsing="false" onAction="#BackbuttonAction" text="Back" />
+      <CheckBox fx:id="poorCheckBox" layoutX="252.0" layoutY="171.0" mnemonicParsing="false" text="Poor" />
+   </children>
+</AnchorPane>
