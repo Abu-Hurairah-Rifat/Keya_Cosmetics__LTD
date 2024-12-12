@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="view" prefHeight="437.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.MonitorStockAbilityView">
+   <children>
+      <Label fx:id="tittleInventoryManagement" layoutX="142.0" layoutY="6.0" text="Inventory Management Overview">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="pNameLabel" layoutX="25.0" layoutY="74.0" text="Product Name:" />
+      <Label fx:id="statusLabel" layoutX="419.0" layoutY="83.0" text="Status:" />
+      <Label fx:id="priceLabel" layoutX="25.0" layoutY="161.0" text="Price:" />
+      <TableView fx:id="table" layoutX="90.0" layoutY="236.0" prefHeight="150.0" prefWidth="411.0">
+        <columns>
+          <TableColumn fx:id="pNameTable" prefWidth="115.42858123779297" text="Product Name" />
+          <TableColumn fx:id="dateTable" prefWidth="88.0" text="Date" />
+            <TableColumn fx:id="priceTable" prefWidth="74.857177734375" text="Price" />
+            <TableColumn fx:id="statusTable" prefWidth="133.14288330078125" text="Current Status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="ProductNameField" layoutX="107.0" layoutY="70.0" />
+      <TextField fx:id="dateField" layoutX="107.0" layoutY="117.0" />
+      <TextField fx:id="priceField" layoutX="107.0" layoutY="157.0" />
+      <RadioButton fx:id="inStockRadioButton" layoutX="419.0" layoutY="108.0" mnemonicParsing="false" text="In Stock" />
+      <RadioButton fx:id="lowStockRadioButton" layoutX="419.0" layoutY="130.0" mnemonicParsing="false" text="Low Stock" />
+      <RadioButton fx:id="outOfStockRadioButton" layoutX="419.0" layoutY="153.0" mnemonicParsing="false" text="Out of Stock" />
+      <Button layoutX="27.0" layoutY="211.0" mnemonicParsing="false" onAction="#addButtonAction" text="Add" />
+      <Button layoutX="514.0" layoutY="211.0" mnemonicParsing="false" onAction="#clearButtonAction" text="Clear" />
+      <Button layoutX="279.0" layoutY="400.0" mnemonicParsing="false" onAction="#backButtonAction" text="Back" />
+      <Label fx:id="dateLabel" layoutX="25.0" layoutY="121.0" text="Date:" />
+   </children>
+</AnchorPane>
