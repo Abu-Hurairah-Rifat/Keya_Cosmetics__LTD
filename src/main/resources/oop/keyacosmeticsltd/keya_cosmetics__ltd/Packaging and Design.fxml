@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="649.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.PackagingAndDesign">
+   <children>
+      <Label layoutX="188.0" layoutY="43.0" prefHeight="38.0" prefWidth="388.0" text="        Packaging And Design Collaboration">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="120.0" text="Enter Product Name" />
+      <TextField fx:id="productnameTextfield" layoutX="176.0" layoutY="116.0" />
+      <Label layoutX="47.0" layoutY="172.0" text="Packaging Type" />
+      <ComboBox fx:id="packagingtypecombobox" layoutX="176.0" layoutY="168.0" prefWidth="150.0" />
+      <Label layoutX="47.0" layoutY="223.0" text="Material" />
+      <CheckBox fx:id="glasscheckbox" layoutX="176.0" layoutY="223.0" mnemonicParsing="false" text="Glass" />
+      <CheckBox fx:id="metalcheckbox" layoutX="448.0" layoutY="224.0" mnemonicParsing="false" text="Metal" />
+      <CheckBox fx:id="plasticcheckbox" layoutX="307.0" layoutY="224.0" mnemonicParsing="false" text="Plastic" />
+      <Label layoutX="448.0" layoutY="120.0" text="Design" />
+      <TextField fx:id="designtextfield" layoutX="524.0" layoutY="116.0" />
+      <Button layoutX="101.0" layoutY="272.0" mnemonicParsing="false" onAction="#saveonactionbutton" prefHeight="26.0" prefWidth="198.0" text="Save" />
+      <Button layoutX="421.0" layoutY="272.0" mnemonicParsing="false" onAction="#resetonactionbutton" prefHeight="26.0" prefWidth="206.0" text="Reset" />
+      <TableView fx:id="productdetailstable" layoutX="14.0" layoutY="331.0" prefHeight="200.0" prefWidth="745.0">
+        <columns>
+          <TableColumn fx:id="productnamecolumn" prefWidth="159.20000648498535" text="Product Name" />
+          <TableColumn fx:id="packagingtypecolumn" prefWidth="221.5999755859375" text="PackagingType" />
+            <TableColumn fx:id="materialcolumn" prefWidth="156.80001831054688" text="Material" />
+            <TableColumn fx:id="designcolumn" prefWidth="208.0" text="Design" />
+        </columns>
+      </TableView>
+      <Button layoutX="550.0" layoutY="589.0" mnemonicParsing="false" onAction="#backonactionbutton" prefHeight="26.0" prefWidth="186.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

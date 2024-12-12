@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="608.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.ImprovingExistingProducts">
+   <children>
+      <Label fx:id="titlelabel" alignment="CENTER" layoutX="14.0" layoutY="31.0" prefHeight="42.0" prefWidth="755.0" text="Improving Existing Products Based on Customer Feedback and Trends">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="127.0" text="Product Name" />
+      <Label layoutX="40.0" layoutY="180.0" text="Customer Feedback" />
+      <Label layoutX="377.0" layoutY="127.0" text="Market Tend Insights" />
+      <Label layoutX="377.0" layoutY="180.0" text="Improvements" />
+      <TextField fx:id="productnametextfield" layoutX="169.0" layoutY="123.0" />
+      <TextArea fx:id="customerfeedbacktextarea" layoutX="154.0" layoutY="164.0" prefHeight="83.0" prefWidth="200.0" />
+      <TextField fx:id="marketrendTextfield" layoutX="521.0" layoutY="123.0" />
+      <ComboBox fx:id="improvementscombobox" layoutX="520.0" layoutY="176.0" prefWidth="150.0" />
+      <Button layoutX="40.0" layoutY="279.0" mnemonicParsing="false" onAction="#addimprovementactionbutton" prefHeight="26.0" prefWidth="150.0" text="Add Improvement" />
+      <Button layoutX="254.0" layoutY="279.0" mnemonicParsing="false" onAction="#removeimprovementactionbutton" prefHeight="26.0" prefWidth="150.0" text="Remove Improvement" />
+      <Button layoutX="553.0" layoutY="561.0" mnemonicParsing="false" onAction="#backactionbutton" prefHeight="26.0" prefWidth="150.0" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="detailstableview" layoutX="17.0" layoutY="334.0" prefHeight="200.0" prefWidth="744.0">
+        <columns>
+          <TableColumn fx:id="productnamecolumn" prefWidth="118.39999008178711" text="Product Name" />
+          <TableColumn fx:id="marketTrendcolumn" prefWidth="172.8000030517578" text="Market Trend Insights" />
+            <TableColumn fx:id="customerfeedbackcolumn" prefWidth="205.60009765625" text="Customer Feedback" />
+            <TableColumn fx:id="improvementcolumn" prefWidth="247.199951171875" text="Improvements" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
