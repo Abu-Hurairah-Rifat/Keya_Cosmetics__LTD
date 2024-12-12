@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="view" prefHeight="413.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.DistributorManagementView">
+   <children>
+      <Label fx:id="tittleDistributorManagementPanel" layoutX="134.0" layoutY="7.0" prefHeight="30.0" prefWidth="330.0" text="Distributor Management Panel">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="distributorNameLabel" layoutX="32.0" layoutY="77.0" text="Distributor Name:" />
+      <Label fx:id="phoneNoLabel" layoutX="223.0" layoutY="77.0" text="Phone NO:" />
+      <Label fx:id="dateLabel" layoutX="355.0" layoutY="77.0" text="Order Date:" />
+      <Label fx:id="amountLabel" layoutX="473.0" layoutY="77.0" prefHeight="17.0" prefWidth="75.0" text="Total Amount" />
+      <TableView fx:id="table" layoutX="52.0" layoutY="210.0" prefHeight="143.0" prefWidth="480.0">
+        <columns>
+          <TableColumn fx:id="distributorNameTable" prefWidth="144.57140731811523" text="Distributor Name" />
+          <TableColumn fx:id="dateTable" prefWidth="98.28570556640625" text="Date" />
+            <TableColumn fx:id="statusTable" prefWidth="102.2857666015625" text="Status" />
+            <TableColumn fx:id="amountTable" prefWidth="135.42861938476562" text="TotalAmount" />
+        </columns>
+      </TableView>
+      <TextField fx:id="distributorNameField" layoutX="14.0" layoutY="102.0" />
+      <TextField fx:id="phoneNoField" layoutX="186.0" layoutY="102.0" prefHeight="25.0" prefWidth="131.0" />
+      <TextField fx:id="dateField" layoutX="327.0" layoutY="102.0" prefHeight="25.0" prefWidth="118.0" />
+      <TextField fx:id="amountField" layoutX="456.0" layoutY="102.0" prefHeight="25.0" prefWidth="118.0" />
+      <Label fx:id="statusLabel" layoutX="16.0" layoutY="148.0" text="Status:" />
+      <RadioButton fx:id="completedRadioButton" layoutX="61.0" layoutY="148.0" mnemonicParsing="false" text="Completed" />
+      <RadioButton fx:id="pendingRadioButton" layoutX="61.0" layoutY="175.0" mnemonicParsing="false" text="Pending" />
+      <Button layoutX="12.0" layoutY="373.0" mnemonicParsing="false" onAction="#saveButtonAction" text="Save" />
+      <Button layoutX="74.0" layoutY="373.0" mnemonicParsing="false" onAction="#updateButtonAction" text="Update" />
+      <Button layoutX="545.0" layoutY="373.0" mnemonicParsing="false" onAction="#backButtonAction" text="Back" />
+   </children>
+</AnchorPane>
