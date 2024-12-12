@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="584.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.BudgetManagement">
+   <children>
+      <Label fx:id= "titlelabel" alignment="CENTER" layoutX="14.0" layoutY="34.0" prefHeight="43.0" prefWidth="758.0" text="Budget Management For Product Development">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="114.0" text="Product Name" />
+      <Label layoutX="30.0" layoutY="167.0" text="Department" />
+      <Label layoutX="373.0" layoutY="114.0" text="Budget" />
+      <Label layoutX="379.0" layoutY="167.0" text="Allocation Date" />
+      <TextField fx:id="productnametextfield" layoutX="132.0" layoutY="110.0" />
+      <TextField fx:id="budgettextfeild" layoutX="483.0" layoutY="110.0" />
+      <ComboBox fx:id="deptCombobox" layoutX="119.0" layoutY="163.0" prefWidth="150.0" />
+      <DatePicker fx:id="allocationdatePicker" layoutX="476.0" layoutY="163.0" />
+      <Button layoutX="30.0" layoutY="225.0" mnemonicParsing="false" onAction="#addbudgrtonactionbutton" prefHeight="26.0" prefWidth="157.0" text="Add Budget" />
+      <Button layoutX="262.0" layoutY="225.0" mnemonicParsing="false" onAction="#removebudgetonactionbutton" prefHeight="26.0" prefWidth="157.0" text="Remove Budget" />
+      <Button layoutX="493.0" layoutY="225.0" mnemonicParsing="false" onAction="#clearbuttononactionbutton" prefHeight="26.0" prefWidth="157.0" text="Clear Fields" />
+      <TableView fx:id="tableviewfordetails" layoutX="32.0" layoutY="279.0" prefHeight="200.0" prefWidth="698.0">
+        <columns>
+          <TableColumn fx:id="productnamecolumn" prefWidth="127.99996566772461" text="Product Name" />
+          <TableColumn fx:id="budegetcolumn" minWidth="0.0" prefWidth="224.80006408691406" text="Budget" />
+            <TableColumn fx:id="deptcolumn" prefWidth="168.0" text="Department" />
+            <TableColumn fx:id="allocationdatecolumn" prefWidth="175.99993896484375" text="Allocation Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="572.0" layoutY="524.0" mnemonicParsing="false" onAction="#backonactionbutton" prefHeight="26.0" prefWidth="122.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
