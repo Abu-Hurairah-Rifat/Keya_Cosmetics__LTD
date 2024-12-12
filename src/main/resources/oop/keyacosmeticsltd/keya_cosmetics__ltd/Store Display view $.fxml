@@ -29,7 +29,7 @@
       <TextField fx:id="datefield" layoutX="108.0" layoutY="295.0" />
       <TableView fx:id="tablefield" layoutX="279.0" layoutY="77.0" prefHeight="263.0" prefWidth="308.0">
         <columns>
-          <TableColumn fx:id="displaynametable" prefWidth="88.57147216796875" text="Display Nmae" />
+          <TableColumn fx:id="displaynametable" prefWidth="88.57147216796875" text="Display Name" />
           <TableColumn fx:id="themetable" prefWidth="70.28564453125" text="Theme" />
             <TableColumn fx:id="targetsectiontable" prefWidth="87.42868041992188" text="Target Section" />
             <TableColumn fx:id="datetable" prefWidth="55.9998779296875" text="Date" />
