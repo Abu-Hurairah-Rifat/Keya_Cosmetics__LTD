@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.EditEmployeeAccounts">
    <children>
-      <TableView layoutX="58.0" layoutY="100.0" prefHeight="200.0" prefWidth="486.0">
+      <TableView layoutX="57.0" layoutY="33.0" prefHeight="200.0" prefWidth="486.0">
         <columns>
           <TableColumn prefWidth="124.00006103515625" text="Name" />
           <TableColumn prefWidth="111.199951171875" text="ID" />
@@ -17,5 +18,8 @@
         </columns>
       </TableView>
       <Button layoutX="433.0" layoutY="313.0" mnemonicParsing="false" onAction="#updateEmployeeDetailsButton" text="Update Employee" />
+      <Button layoutX="432.0" layoutY="248.0" mnemonicParsing="false" onAction="#updateEmployeeDetailsButton" prefHeight="26.0" prefWidth="110.0" text="Search Employee" />
+      <Label layoutX="57.0" layoutY="252.0" text="Enter Employee ID:" />
+      <TextField layoutX="178.0" layoutY="248.0" prefHeight="26.0" prefWidth="229.0" />
    </children>
 </AnchorPane>
