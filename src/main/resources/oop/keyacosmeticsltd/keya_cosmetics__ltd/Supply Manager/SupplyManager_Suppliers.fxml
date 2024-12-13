@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="430.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.Supply Manager.SupplyManagerSuppliers">
+   <children>
+      <Label layoutX="242.0" layoutY="8.0" prefHeight="43.0" prefWidth="80.0" text="Supplies" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="89.0" layoutY="57.0" prefHeight="25.0" prefWidth="162.0" />
+      <Label layoutX="24.0" layoutY="57.0" prefHeight="25.0" prefWidth="57.0" text="Suppliers" />
+      <TextField layoutX="350.0" layoutY="57.0" prefHeight="25.0" prefWidth="141.0" />
+      <Button layoutX="24.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" text="Sort By Price" wrapText="true" />
+      <Label layoutX="282.0" layoutY="57.0" prefHeight="25.0" prefWidth="65.0" text="Category" />
+      <TableView layoutX="24.0" layoutY="151.0" prefHeight="265.0" prefWidth="540.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Category" />
+          <TableColumn prefWidth="171.0" text="Product Name" />
+            <TableColumn prefWidth="109.0" text="Unit Price" />
+            <TableColumn prefWidth="83.0" text="Delivery Time" />
+            <TableColumn prefWidth="95.0" text="Supplier Rating" />
+        </columns>
+      </TableView>
+      <Button layoutX="282.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="210.0" text="Sort By Delivary Time" wrapText="true" />
+   </children>
+</AnchorPane>

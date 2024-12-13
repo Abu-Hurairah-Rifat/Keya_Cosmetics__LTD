@@ -8,27 +8,27 @@
 
 <AnchorPane prefHeight="427.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantDashboard">
    <children>
-      <Button layoutX="61.0" layoutY="112.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Financial Statement" textAlignment="CENTER" wrapText="true">
+      <Button layoutX="61.0" layoutY="112.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Material Inventory" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="230.0" layoutY="112.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" text="Add Journal">
+      <Button layoutX="230.0" layoutY="112.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" text="Budgeting">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="394.0" layoutY="112.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Recent Transactions" textAlignment="CENTER" wrapText="true">
+      <Button layoutX="394.0" layoutY="112.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Suppliers" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="61.0" layoutY="211.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Inventory">
+      <Button layoutX="61.0" layoutY="211.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Control Inventory" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="230.0" layoutY="211.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Wage Status">
+      <Button layoutX="230.0" layoutY="211.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Shipments">
          <font>
             <Font size="18.0" />
          </font>
@@ -38,18 +38,18 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="61.0" layoutY="322.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="475.0" text="Reports">
+      <Button layoutX="61.0" layoutY="322.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="475.0" text="Compliance">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Label layoutX="205.0" prefHeight="66.0" prefWidth="190.0" text="Acountant Dashboard" wrapText="true">
+      <Label layoutX="179.0" prefHeight="66.0" prefWidth="239.0" text="Supply Manager Dashboard" wrapText="true">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
       <ImageView fitHeight="51.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true" />
-      <Button layoutX="230.0" layoutY="162.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="140.0" text="Edit Journal">
+      <Button layoutX="230.0" layoutY="162.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="140.0" text="Forecasting">
          <font>
             <Font size="18.0" />
          </font>

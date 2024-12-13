@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="455.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantDepriciationCalculator">
+<AnchorPane prefHeight="455.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantDepriciationCalculatorController">
    <children>
       <Label layoutX="216.0" layoutY="14.0" prefHeight="36.0" prefWidth="200.0" text="Depriciation Calculator">
          <font>
