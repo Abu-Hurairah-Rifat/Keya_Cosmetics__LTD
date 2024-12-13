@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="567.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantReports">
+<AnchorPane prefHeight="567.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantReportsController">
    <children>
       <PieChart layoutX="26.0" layoutY="243.0" prefHeight="202.0" prefWidth="263.0" />
       <LineChart layoutX="306.0" layoutY="234.0" prefHeight="221.0" prefWidth="324.0">
