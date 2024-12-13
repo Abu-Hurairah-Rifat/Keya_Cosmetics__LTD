@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="view" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.WHCleanlinessView">
+   <children>
+      <Label fx:id="tittleWarehouseSafetyAndCleanlinessPanel" layoutX="111.0" layoutY="8.0" text="Warehouse Safety &amp; Cleanliness Panel">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="inspectorNameLabel" layoutX="33.0" layoutY="84.0" text="Inspector Name:" />
+      <Label fx:id="inspectionDateLabel" layoutX="33.0" layoutY="129.0" text="Inspection Date:" />
+      <Label fx:id="ratingLabel" layoutX="31.0" layoutY="175.0" text="Safety Rating:" />
+      <Label fx:id="checkLabel" layoutX="39.0" layoutY="267.0" text="Check List:" />
+      <TextField fx:id="inspectorNameField" layoutX="125.0" layoutY="80.0" />
+      <TextField fx:id="inspectionDateField" layoutX="125.0" layoutY="125.0" />
+      <TableView fx:id="table" layoutX="334.0" layoutY="83.0" prefHeight="251.0" prefWidth="234.0">
+        <columns>
+          <TableColumn fx:id="inspectorNameTable" prefWidth="99.4285888671875" text="Inspector Name" />
+          <TableColumn fx:id="dateTable" prefWidth="51.42852783203125" text="Date" />
+            <TableColumn fx:id="rateTable" prefWidth="81.14285278320312" text="Rate" />
+        </columns>
+      </TableView>
+      <RadioButton fx:id="goodRadioButton" layoutX="111.0" layoutY="175.0" mnemonicParsing="false" text="Good" />
+      <RadioButton fx:id="averageRadioButton" layoutX="111.0" layoutY="200.0" mnemonicParsing="false" text="Average" />
+      <RadioButton fx:id="poorRadioButton" layoutX="111.0" layoutY="224.0" mnemonicParsing="false" text="Poor" />
+      <CheckBox fx:id="ClearFloorsChecklist" layoutX="111.0" layoutY="267.0" mnemonicParsing="false" text="Clear Floors" />
+      <CheckBox fx:id="storedEquipmentChecklist" layoutX="111.0" layoutY="300.0" mnemonicParsing="false" text="Stored Equipment" />
+      <CheckBox fx:id="fireSafetyChecklist" layoutX="111.0" layoutY="330.0" mnemonicParsing="false" text="Fire Safety" />
+      <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#backbuttonAction" text="Back" />
+      <Button layoutX="475.0" layoutY="361.0" mnemonicParsing="false" onAction="#resetButtonAction" text="Reset" />
+      <Button layoutX="421.0" layoutY="361.0" mnemonicParsing="false" onAction="#saveButtonAction" text="Save" />
+   </children>
+</AnchorPane>
