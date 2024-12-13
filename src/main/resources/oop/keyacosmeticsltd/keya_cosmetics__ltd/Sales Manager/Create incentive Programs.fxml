@@ -6,7 +6,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -24,9 +23,7 @@
       <Label layoutX="41.0" layoutY="248.0" text="Duration:" />
       <Label layoutX="415.0" layoutY="198.0" text="Budget" />
       <Label layoutX="41.0" layoutY="156.0" text="Target Sales Value" />
-      <Label layoutX="409.0" layoutY="120.0" text="Objective" />
       <TextField fx:id="programNametextfield" layoutX="170.0" layoutY="116.0" />
-      <TextArea fx:id="objectiveTextarea" layoutX="509.0" layoutY="103.0" prefHeight="78.0" prefWidth="200.0" />
       <TextField fx:id="salesvaluetextfield" layoutX="171.0" layoutY="152.0" />
       <TextField fx:id="rewardvaluetextfield" layoutX="171.0" layoutY="195.0" />
       <Label layoutX="132.0" layoutY="248.0" text="Start Date" />
@@ -37,8 +34,8 @@
       <CheckBox fx:id="recognitionbasedcheckbox" layoutX="422.0" layoutY="295.0" mnemonicParsing="false" text="Recognition-Based" />
       <CheckBox fx:id="nonmonetarycheckbox" layoutX="282.0" layoutY="295.0" mnemonicParsing="false" text="Non-Monetary" />
       <TextField fx:id="budgettextfield" layoutX="509.0" layoutY="195.0" />
-      <Button layoutX="106.0" layoutY="356.0" mnemonicParsing="false" onAction="#generateincentiveplanactionbutton" prefHeight="26.0" prefWidth="245.0" text="Generate Incentive Plan" />
-      <Button layoutX="394.0" layoutY="356.0" mnemonicParsing="false" onAction="#saveprogramactionbutton" prefHeight="26.0" prefWidth="245.0" text="Save Program" />
+      <Button layoutX="106.0" layoutY="356.0" mnemonicParsing="false" onAction="#addonactionbutton" prefHeight="26.0" prefWidth="245.0" text="Add" />
+      <Button layoutX="394.0" layoutY="356.0" mnemonicParsing="false" onAction="#removeonactionbutton" prefHeight="26.0" prefWidth="245.0" text="Remove" />
       <TableView fx:id="generatetableview" layoutX="12.0" layoutY="400.0" prefHeight="200.0" prefWidth="705.0">
         <columns>
           <TableColumn fx:id="programnamecolumn" prefWidth="125.59993743896484" text="Program Name" />
