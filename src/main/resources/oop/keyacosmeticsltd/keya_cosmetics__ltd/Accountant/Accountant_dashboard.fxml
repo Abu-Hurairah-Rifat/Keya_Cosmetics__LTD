@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="427.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantDashboard">
+   <children>
+      <Button layoutX="61.0" layoutY="112.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Financial Statement" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="230.0" layoutY="112.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" text="Add Journal">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="394.0" layoutY="112.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Recent Transactions" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="61.0" layoutY="211.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Inventory">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="230.0" layoutY="211.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Wage Status">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="394.0" layoutY="211.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Depriciation Calculator" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="61.0" layoutY="322.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="475.0" text="Reports">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="205.0" prefHeight="66.0" prefWidth="190.0" text="Acountant Dashboard" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="230.0" layoutY="162.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="140.0" text="Edit Journal">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

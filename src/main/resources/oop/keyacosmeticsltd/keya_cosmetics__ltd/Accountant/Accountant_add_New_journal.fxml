@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="432.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantJournal">
+   <children>
+      <Label layoutX="212.0" prefHeight="43.0" prefWidth="160.0" text="New Journal Entry">
+         <font>
+            <Font name="Microsoft PhagsPa Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView layoutX="13.0" layoutY="77.0" prefHeight="297.0" prefWidth="544.0">
+        <columns>
+          <TableColumn prefWidth="59.0" text=" No" />
+          <TableColumn prefWidth="89.0" text="Date(D/M/Y)" />
+            <TableColumn prefWidth="182.0" text="Account" />
+            <TableColumn prefWidth="109.0" text="Debit" />
+            <TableColumn prefWidth="104.0" text="Credit" />
+        </columns>
+      </TableView>
+      <TextField layoutX="115.0" layoutY="43.0" />
+      <Label layoutX="21.0" layoutY="43.0" prefHeight="25.0" prefWidth="107.0" text="Journlal Number" />
+      <Label layoutX="285.0" layoutY="387.0" text="Total:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="352.0" layoutY="384.0" prefHeight="25.0" prefWidth="98.0" text="Dr." />
+      <Label layoutX="451.0" layoutY="384.0" prefHeight="25.0" prefWidth="107.0" text="Cr." />
+   </children>
+</AnchorPane>
