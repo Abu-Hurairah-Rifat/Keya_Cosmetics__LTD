@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="448.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantInventoryViewController">
+<AnchorPane prefHeight="448.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.SupplyManagerDashboardController">
    <children>
       <Label layoutX="272.0" layoutY="14.0" prefHeight="28.0" prefWidth="229.0" text="Control Inventory Status" textAlignment="CENTER">
          <font>

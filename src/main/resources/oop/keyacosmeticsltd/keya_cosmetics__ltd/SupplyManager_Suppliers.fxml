@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="430.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.Supply Manager.SupplyManagerSuppliers">
+<AnchorPane prefHeight="430.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.Supply Manager.SupplyManagerSuppliersController">
    <children>
       <Label layoutX="242.0" layoutY="8.0" prefHeight="43.0" prefWidth="80.0" text="Supplies" wrapText="true">
          <font>

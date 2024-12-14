@@ -6,39 +6,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="427.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantDashboard">
+<AnchorPane prefHeight="427.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.SupplyManagerDashboardController">
    <children>
-      <Button layoutX="61.0" layoutY="112.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Material Inventory" textAlignment="CENTER" wrapText="true">
+      <Button layoutX="61.0" layoutY="112.0" mnemonicParsing="false" onAction="#goTo_MaterialInventory_onClick" prefHeight="85.0" prefWidth="140.0" text="Material Inventory" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="230.0" layoutY="112.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" text="Budgeting">
+      <Button layoutX="230.0" layoutY="112.0" mnemonicParsing="false" onAction="#goTo_Budgeting_onClick" prefHeight="39.0" prefWidth="140.0" text="Budgeting">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="394.0" layoutY="112.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Suppliers" textAlignment="CENTER" wrapText="true">
+      <Button layoutX="394.0" layoutY="112.0" mnemonicParsing="false" onAction="#goTo_Suppliers_onClick" prefHeight="85.0" prefWidth="140.0" text="Suppliers" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="61.0" layoutY="211.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Control Inventory" wrapText="true">
+      <Button layoutX="61.0" layoutY="211.0" mnemonicParsing="false" onAction="#goTo_ControlInvetory_onClick" prefHeight="85.0" prefWidth="140.0" text="Control Inventory" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="230.0" layoutY="211.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Shipments">
+      <Button layoutX="230.0" layoutY="211.0" mnemonicParsing="false" onAction="#goTo_Shipments_onClick" prefHeight="85.0" prefWidth="140.0" text="Shipments">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="394.0" layoutY="211.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="140.0" text="Depriciation Calculator" textAlignment="CENTER" wrapText="true">
+      <Button layoutX="394.0" layoutY="211.0" mnemonicParsing="false" onAction="#goTo_Logistics_onClick" prefHeight="85.0" prefWidth="140.0" text="Logistics" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="61.0" layoutY="322.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="475.0" text="Compliance">
+      <Button layoutX="61.0" layoutY="322.0" mnemonicParsing="false" onAction="#goTo_Compliance_onClick" prefHeight="51.0" prefWidth="475.0" text="Compliance">
          <font>
             <Font size="24.0" />
          </font>
@@ -49,7 +49,7 @@
          </font>
       </Label>
       <ImageView fitHeight="51.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true" />
-      <Button layoutX="230.0" layoutY="162.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="140.0" text="Forecasting">
+      <Button layoutX="230.0" layoutY="162.0" mnemonicParsing="false" onAction="#goTo_Forecasting_onClick" prefHeight="36.0" prefWidth="140.0" text="Forecasting">
          <font>
             <Font size="18.0" />
          </font>
