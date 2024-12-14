@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.EditEmployeeAccounts">
    <children>
-      <TableView layoutX="57.0" layoutY="130.0" prefHeight="200.0" prefWidth="486.0">
+      <TableView fx:id="table" layoutX="57.0" layoutY="130.0" prefHeight="175.0" prefWidth="486.0">
         <columns>
           <TableColumn prefWidth="124.00006103515625" text="Name" />
           <TableColumn prefWidth="111.199951171875" text="ID" />

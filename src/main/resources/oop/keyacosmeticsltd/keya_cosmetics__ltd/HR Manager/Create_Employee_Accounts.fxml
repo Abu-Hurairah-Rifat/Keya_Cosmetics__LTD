@@ -8,30 +8,42 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.Create_Employee_Accounts">
-   <children>
-      <Label layoutX="58.0" layoutY="72.0" prefHeight="18.0" prefWidth="85.0" text="Name" />
-      <Label layoutX="58.0" layoutY="108.0" prefHeight="18.0" prefWidth="85.0" text="ID" />
-      <Label layoutX="58.0" layoutY="142.0" prefHeight="18.0" prefWidth="85.0" text="Contact " />
-      <TextField fx:id="newEmployeeName" layoutX="177.0" layoutY="69.0" />
-      <TextField fx:id="newEmployeeID" layoutX="177.0" layoutY="105.0" />
-      <TextField fx:id="newEmployeeContact" layoutX="177.0" layoutY="139.0" />
-      <Label layoutX="58.0" layoutY="176.0" prefHeight="18.0" prefWidth="85.0" text="Email" />
-      <TextField fx:id="newEmployeeEmail" layoutX="177.0" layoutY="173.0" />
-      <Button layoutX="369.0" layoutY="173.0" mnemonicParsing="false" onAction="#addEmployeeButton" text="Add Employee" />
-      <TableView layoutX="55.0" layoutY="230.0" prefHeight="155.0" prefWidth="490.0">
-        <columns>
-          <TableColumn prefWidth="155.20001220703125" text="Name" />
-          <TableColumn prefWidth="101.5999755859375" text="ID" />
-            <TableColumn prefWidth="90.4000244140625" text="Contact" />
-            <TableColumn prefWidth="145.5999755859375" text="Email" />
-        </columns>
-      </TableView>
-      <Label alignment="CENTER" layoutX="200.0" layoutY="14.0" prefHeight="30.0" prefWidth="197.0" text="Add New Employee" textAlignment="RIGHT">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Button layoutX="503.0" layoutY="24.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
-   </children>
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.Create_Employee_Accounts">
+    <children>
+        <!-- Input Fields -->
+        <Label layoutX="100.0" layoutY="87.0" text="Employee ID" />
+        <TextField fx:id="newEmployeeID" layoutX="230.0" layoutY="83.0" prefWidth="300.0" />
+
+        <Label layoutX="100.0" layoutY="137.0" text="Employee Name" />
+        <TextField fx:id="newEmployeeName" layoutX="230.0" layoutY="133.0" prefWidth="300.0" />
+
+        <Label layoutX="100.0" layoutY="187.0" text="Employee Email" />
+        <TextField fx:id="newEmployeeEmail" layoutX="230.0" layoutY="183.0" prefWidth="300.0" />
+
+        <Label layoutX="100.0" layoutY="237.0" text="Employee Contact" />
+        <TextField fx:id="newEmployeeContact" layoutX="230.0" layoutY="233.0" prefWidth="300.0" />
+
+        <!-- Buttons -->
+        <Button layoutX="550.0" layoutY="233.0" onAction="#addEmployeeButton" prefWidth="120.0" text="Add Employee" />
+        <Button layoutX="570.0" layoutY="353.0" onAction="#saveToFile" prefWidth="100.0" text="Save to File" />
+        <Button layoutX="570.0" layoutY="307.0" onAction="#loadFromFile" prefWidth="100.0" text="Load from File" />
+        <Button layoutX="570.0" layoutY="20.0" onAction="#backButton" prefWidth="100.0" text="Back" />
+
+        <!-- TableView -->
+        <TableView fx:id="employeeTable" layoutX="100.0" layoutY="307.0" prefHeight="180.0" prefWidth="452.0">
+            <columns>
+                <TableColumn fx:id="columnID" prefWidth="100.0" text="ID" />
+                <TableColumn fx:id="columnName" prefWidth="136.0" text="Name" />
+                <TableColumn fx:id="columnEmail" prefWidth="138.39996337890625" text="Email" />
+                <TableColumn fx:id="columnContact" prefWidth="76.80001831054688" text="Contact" />
+            </columns>
+        </TableView>
+
+        <!-- Title -->
+        <Label layoutX="200.0" layoutY="20.0" text="Create Employee Account">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </children>
 </AnchorPane>
