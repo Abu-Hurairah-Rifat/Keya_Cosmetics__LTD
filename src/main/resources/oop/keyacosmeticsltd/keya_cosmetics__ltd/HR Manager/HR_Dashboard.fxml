@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.HR_Dashboard">
    <children>
@@ -13,5 +15,11 @@
       <Button layoutX="348.0" layoutY="176.0" mnemonicParsing="false" onAction="#conductTrainingSessionsButton" prefHeight="26.0" prefWidth="158.0" text="Conduct Training Sessions" />
       <Button layoutX="347.0" layoutY="239.0" mnemonicParsing="false" onAction="#handleGrievancesButton" prefHeight="26.0" prefWidth="158.0" text="Handle Grievances" />
       <Button layoutX="348.0" layoutY="287.0" mnemonicParsing="false" onAction="#processEmployeeExitsButton" prefHeight="26.0" prefWidth="158.0" text="Process Employee Exits" />
+      <Label layoutX="223.0" layoutY="32.0" text="HR Dashboard">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="445.0" layoutY="338.0" mnemonicParsing="false" onAction="#logoutButton" text="Log Out" />
    </children>
 </AnchorPane>
