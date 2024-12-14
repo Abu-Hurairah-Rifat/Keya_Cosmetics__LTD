@@ -22,7 +22,7 @@ public class CleanAndSafetyPanel$ {
     private TextField dateField;
 
     @FXML
-    private TableColumn<?, ?> dateTable;
+    private TableColumn<CleanAndSafetyPanel$,String> dateTable;
 
     @FXML
     private CheckBox goodCheckBox;
@@ -37,7 +37,7 @@ public class CleanAndSafetyPanel$ {
     private Label inspectorNameLabel;
 
     @FXML
-    private TableColumn<?, ?> inspectorNameTable;
+    private TableColumn<CleanAndSafetyPanel$,String> inspectorNameTable;
 
     @FXML
     private TextArea noteField;
@@ -46,7 +46,7 @@ public class CleanAndSafetyPanel$ {
     private CheckBox poorCheckBox;
 
     @FXML
-    private TableColumn<?, ?> rateTable;
+    private TableColumn<CleanAndSafetyPanel$,String> rateTable;
 
     @FXML
     private Label ratingLabel;
@@ -55,7 +55,7 @@ public class CleanAndSafetyPanel$ {
     private AnchorPane storeCleanPanelView;
 
     @FXML
-    private TableView<?> table;
+    private TableView<CleanAndSafetyPanel$> table;
 
     @FXML
     private Label tittleStoreCleanAndSafetyPanel;

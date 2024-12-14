@@ -23,7 +23,7 @@ public class CollaborationController$ {
     private Label campaignNameLabel;
 
     @FXML
-    private TableColumn<?, ?> campaignNameTable;
+    private TableColumn<CollaborationController$,String> campaignNameTable;
 
     @FXML
     private Label dateLabel;
@@ -32,7 +32,7 @@ public class CollaborationController$ {
     private DatePicker datePicker;
 
     @FXML
-    private TableColumn<?, ?> dateTable;
+    private TableColumn<CollaborationController$,String> dateTable;
 
     @FXML
     private TextArea goalsArea;
@@ -41,7 +41,7 @@ public class CollaborationController$ {
     private Label goalsLabel;
 
     @FXML
-    private TableColumn<?, ?> goalsTable;
+    private TableColumn<CollaborationController$,String> goalsTable;
 
     @FXML
     private CheckBox organizeInStoreEventsCheckBox;
@@ -53,7 +53,7 @@ public class CollaborationController$ {
     private CheckBox reviewCampaignPerformanceCheckBox;
 
     @FXML
-    private TableView<?> tableView;
+    private TableView<CollaborationController$> tableView;
 
     @FXML
     private Label teamCollaborationLabel;

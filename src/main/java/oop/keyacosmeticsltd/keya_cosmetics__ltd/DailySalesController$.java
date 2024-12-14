@@ -17,10 +17,10 @@ private TextField nameField;
 private Label nameLabel;
 
 @FXML
-private TableColumn<?, ?> nameTable;
+private TableColumn<DailySalesController$,String> nameTable;
 
 @FXML
-private TableView<?> table;
+private TableView<DailySalesController$> table;
 
 @FXML
 private Label tittleDailySalesView;
@@ -38,7 +38,7 @@ private TextField unitSoldField;
 private Label unitSoldLabel;
 
 @FXML
-private TableColumn<?, ?> unitSoldTable;
+private TableColumn<DailySalesController$,String> unitSoldTable;
 
 @FXML
 private TextField valueField;
@@ -47,7 +47,7 @@ private TextField valueField;
 private Label valueLabel;
 
 @FXML
-private TableColumn<?, ?> valueTable;
+private TableColumn<DailySalesController$,String> valueTable;
 
 @FXML
 private AnchorPane view;

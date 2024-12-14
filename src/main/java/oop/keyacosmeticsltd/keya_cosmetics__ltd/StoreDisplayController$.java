@@ -14,28 +14,28 @@ public class StoreDisplayController$ {
     private TextField datefield;
 
     @FXML
-    private TableColumn<?, ?> datetable;
+    private TableColumn<StoreDisplayController$,String> datetable;
 
     @FXML
     private TextField displayname;
 
     @FXML
-    private TableColumn<?, ?> displaynametable;
+    private TableColumn<StoreDisplayController$,String> displaynametable;
 
     @FXML
-    private TableView<?> tablefield;
+    private TableView<StoreDisplayController$> tablefield;
 
     @FXML
     private TextField targetsection;
 
     @FXML
-    private TableColumn<?, ?> targetsectiontable;
+    private TableColumn<StoreDisplayController$,String> targetsectiontable;
 
     @FXML
     private TextField theme;
 
     @FXML
-    private TableColumn<?, ?> themetable;
+    private TableColumn<StoreDisplayController$,String> themetable;
 
     @FXML
     private Label tittleStoreDisplayCreationPanel;

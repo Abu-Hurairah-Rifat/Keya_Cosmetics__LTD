@@ -28,7 +28,7 @@ public class CustomerInquiriesController$ {
     private Label feedbackLabel;
 
     @FXML
-    private TableColumn<?, ?> feedbackTable;
+    private TableColumn<CustomerInquiriesController$,String> feedbackTable;
 
     @FXML
     private TextArea inquiryArea;
@@ -37,22 +37,22 @@ public class CustomerInquiriesController$ {
     private Label inquiryLabel;
 
     @FXML
-    private TableColumn<?, ?> inquiryTable;
+    private TableColumn<CustomerInquiriesController$,String> inquiryTable;
 
     @FXML
-    private TableColumn<?, ?> nameTable;
+    private TableColumn<CustomerInquiriesController$,String> nameTable;
 
     @FXML
     private RadioButton noRadioButton;
 
     @FXML
-    private TableColumn<?, ?> resolveTable;
+    private TableColumn<CustomerInquiriesController$,String> resolveTable;
 
     @FXML
     private Label resolvedLabel;
 
     @FXML
-    private TableView<?> tableField;
+    private TableView<CustomerInquiriesController$> tableField;
 
     @FXML
     private Label tittleCustomerInquiriesPanel;

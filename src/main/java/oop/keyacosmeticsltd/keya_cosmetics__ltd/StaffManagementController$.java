@@ -24,13 +24,13 @@ public class StaffManagementController$ {
     private Label moduleLabel;
 
     @FXML
-    private TableColumn<?, ?> moduleTable;
+    private TableColumn<StaffManagementController$,String> moduleTable;
 
     @FXML
     private Label sessionLabel;
 
     @FXML
-    private TableColumn<?, ?> sessionTable;
+    private TableColumn<StaffManagementController$,String> sessionTable;
 
     @FXML
     private TextField sessionsField;
@@ -42,16 +42,16 @@ public class StaffManagementController$ {
     private Label staffNameLabel;
 
     @FXML
-    private TableColumn<?, ?> staffNameTable;
+    private TableColumn<StaffManagementController$,String> staffNameTable;
 
     @FXML
     private Label statusLabel;
 
     @FXML
-    private TableColumn<?, ?> statusTable;
+    private TableColumn<StaffManagementController$,String> statusTable;
 
     @FXML
-    private TableView<?> table;
+    private TableView<StaffManagementController$> table;
 
     @FXML
     private Label tittleStaffTrainingandManagementoverView;
