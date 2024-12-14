@@ -6,8 +6,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:id="view" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.WarehouseManagerDashboard">
+<AnchorPane fx:id="view" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.WH_Manager_Dashboard$">
    <children>
       <Label fx:id="tittleWarehouseManagerDashboard" layoutX="133.0" layoutY="14.0" text="Warehouse Manager Dashboard">
          <font>
@@ -23,5 +22,6 @@
       <Button layoutX="336.0" layoutY="219.0" mnemonicParsing="false" onAction="#supplyCollabButtonAction" prefHeight="51.0" prefWidth="193.0" text="Supply &amp; Logestic Collab" />
       <Button layoutX="336.0" layoutY="290.0" mnemonicParsing="false" onAction="#sustainoperationButtonAction" prefHeight="51.0" prefWidth="193.0" text="Sustain Operation" />
       <Line endX="0.571441650390625" endY="235.4285888671875" layoutX="300.0" layoutY="76.0" startX="0.571441650390625" startY="35.428558349609375" />
+      <Button layoutX="514.0" layoutY="361.0" mnemonicParsing="false" onAction="#logOutButtonActon" text="Log Out" />
    </children>
 </AnchorPane>
