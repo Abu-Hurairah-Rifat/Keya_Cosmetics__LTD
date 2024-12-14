@@ -6,10 +6,11 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.EditEmployeeAccounts">
    <children>
-      <TableView layoutX="57.0" layoutY="33.0" prefHeight="200.0" prefWidth="486.0">
+      <TableView layoutX="57.0" layoutY="130.0" prefHeight="200.0" prefWidth="486.0">
         <columns>
           <TableColumn prefWidth="124.00006103515625" text="Name" />
           <TableColumn prefWidth="111.199951171875" text="ID" />
@@ -17,9 +18,15 @@
             <TableColumn prefWidth="120.0" text="Email" />
         </columns>
       </TableView>
-      <Button layoutX="433.0" layoutY="313.0" mnemonicParsing="false" onAction="#updateEmployeeDetailsButton" text="Update Employee" />
-      <Button layoutX="432.0" layoutY="248.0" mnemonicParsing="false" onAction="#updateEmployeeDetailsButton" prefHeight="26.0" prefWidth="110.0" text="Search Employee" />
-      <Label layoutX="57.0" layoutY="252.0" text="Enter Employee ID:" />
-      <TextField layoutX="178.0" layoutY="248.0" prefHeight="26.0" prefWidth="229.0" />
+      <Button layoutX="433.0" layoutY="337.0" mnemonicParsing="false" onAction="#updateEmployeeDetailsButton" text="Update Employee" />
+      <Button layoutX="432.0" layoutY="81.0" mnemonicParsing="false" onAction="#searchEmployeeButton" prefHeight="26.0" prefWidth="110.0" text="Search Employee" />
+      <Label layoutX="57.0" layoutY="85.0" text="Enter Employee ID:" />
+      <TextField layoutX="178.0" layoutY="81.0" prefHeight="26.0" prefWidth="229.0" />
+      <Button layoutX="57.0" layoutY="337.0" mnemonicParsing="false" onAction="#backButton" text="Return to Dashboard" />
+      <Label layoutX="178.0" layoutY="21.0" text="Edit Employee Account">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

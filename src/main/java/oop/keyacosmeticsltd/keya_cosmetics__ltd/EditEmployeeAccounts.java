@@ -11,4 +11,11 @@ public class EditEmployeeAccounts {
 
     }
 
+    @FXML
+    public void searchEmployeeButton(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    public void backButton(ActionEvent actionEvent) {
+    }
 }

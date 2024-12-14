@@ -14,4 +14,7 @@ public class TrackAttendance {
 
     }
 
+    @FXML
+    public void backButton(ActionEvent actionEvent) {
+    }
 }
