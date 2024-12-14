@@ -11,9 +11,9 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sales Manager/Sales_Manager_Dashboard.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sales Manager/Sales_Target.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Product Develop Manager");
+        stage.setTitle("Student Project");
         stage.setScene(scene);
         stage.show();
     }
