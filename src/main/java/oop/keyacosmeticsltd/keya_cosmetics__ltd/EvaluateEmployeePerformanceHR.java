@@ -1,23 +1,29 @@
 package oop.keyacosmeticsltd.keya_cosmetics__ltd;
 
-public class EvaluateEmployeePerformanceHR
-{
-    @javafx.fxml.FXML
-    private TextField feedback;
-    @javafx.fxml.FXML
-    private ChoiceBox performanceRating;
-    @javafx.fxml.FXML
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.TextField;
+
+public class EvaluateEmployeePerformanceHR {
+
+    @FXML
     private TextField employeeID;
 
-    @javafx.fxml.FXML
-    public void initialize() {
+    @FXML
+    private TextField feedback;
+
+    @FXML
+    private ChoiceBox<?> performanceRating;
+
+    @FXML
+    void backButton(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void submitPerformance(ActionEvent actionEvent) {
+    @FXML
+    void submitPerformance(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void backButton(ActionEvent actionEvent) {
-    }
 }

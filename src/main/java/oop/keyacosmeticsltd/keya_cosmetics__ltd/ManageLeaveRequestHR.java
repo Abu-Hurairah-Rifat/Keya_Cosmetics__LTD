@@ -1,23 +1,29 @@
 package oop.keyacosmeticsltd.keya_cosmetics__ltd;
 
-public class ManageLeaveRequestHR
-{
-    @javafx.fxml.FXML
-    private TextField reason;
-    @javafx.fxml.FXML
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.TextField;
+
+public class ManageLeaveRequestHR {
+
+    @FXML
     private TextField employeeID;
-    @javafx.fxml.FXML
-    private ChoiceBox status;
 
-    @javafx.fxml.FXML
-    public void initialize() {
+    @FXML
+    private TextField reason;
+
+    @FXML
+    private ChoiceBox<?> status;
+
+    @FXML
+    void backButton(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void submitButton(ActionEvent actionEvent) {
+    @FXML
+    void submitButton(ActionEvent event) {
+
     }
 
-    @javafx.fxml.FXML
-    public void backButton(ActionEvent actionEvent) {
-    }
 }
