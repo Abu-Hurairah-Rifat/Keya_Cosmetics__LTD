@@ -58,30 +58,50 @@ public class BudgetManagement {
         String productName = productnametextfield.getText().trim();
         String budgetText = budgettextfeild.getText().trim();
         String department = deptCombobox.getValue();
-        String allocationDate = (allocationdatePicker.getValue() != null) ? allocationdatePicker.getValue().toString() : null;
-
-        if (productName.isEmpty() || budgetText.isEmpty() || department == null || allocationDate == null) {
+        String allocationDate = (allocationdatePicker.getValue() != null)
+                ? allocationdatePicker.getValue().toString()
+                : null;
+        if (isInputInvalid(productName, budgetText, department, allocationDate)) {
             showAlert(Alert.AlertType.ERROR, "Input Error", "All fields must be filled!");
             return;
         }
+        if (tryAddBudget(productName, budgetText, department, allocationDate)) {
+            clearFields();
+            showAlert(Alert.AlertType.INFORMATION, "Success", "Budget added successfully!");
+        }
+    }
 
+    private boolean isInputInvalid(String productName, String budgetText, String department, String allocationDate) {
+        return productName.isEmpty() || budgetText.isEmpty() || department == null || allocationDate == null;
+    }
+
+    private boolean tryAddBudget(String productName, String budgetText, String department, String allocationDate) {
         try {
             double budget = Double.parseDouble(budgetText);
             BudgetDetailsM newBudget = new BudgetDetailsM(productName, budget, department, allocationDate);
             budgetDetailsList.add(newBudget);
-            clearFields();
-            showAlert(Alert.AlertType.INFORMATION, "Success", "Budget added successfully!");
-
+            return true;
         } catch (NumberFormatException e) {
             showAlert(Alert.AlertType.ERROR, "Input Error", "Budget must be a valid number!");
+            return false;
         }
     }
 
     private void clearFields() {
+        productnametextfield.clear();
+        budgettextfeild.clear();
+        deptCombobox.setValue(null);
+        allocationdatePicker.setValue(null);
     }
 
-    private void showAlert(Alert.AlertType alertType, String inputError, String s) {
+    private void showAlert(Alert.AlertType alertType, String title, String message) {
+        Alert alert = new Alert(alertType);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
     }
+
 
 
     @FXML
