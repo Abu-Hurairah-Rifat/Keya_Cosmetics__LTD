@@ -61,7 +61,14 @@ public class SalesManager {
     }
 
     @FXML
-    void logoutonactionbutton(ActionEvent event) {
+    void logoutonactionbutton(ActionEvent event)throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
+
 
     }
 
