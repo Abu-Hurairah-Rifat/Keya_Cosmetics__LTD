@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="view" prefHeight="501.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.StockCenterView">
+<AnchorPane fx:id="view" prefHeight="501.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.WH_StockCenter$">
    <children>
       <Label fx:id="tittleWarehouseStockAndOrderManagement" layoutX="133.0" layoutY="7.0" text="Warehouse Stock &amp; Order Management">
          <font>
