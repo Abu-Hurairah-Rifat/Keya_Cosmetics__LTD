@@ -3,22 +3,18 @@ package oop.keyacosmeticsltd.keya_cosmetics__ltd;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class EmployeeExitProcessingHR {
+public class ManageLeaveRequestHR {
 
     @FXML
     private TextField employeeID;
 
     @FXML
-    private ChoiceBox<?> reasonForExit;
+    private TextField reason;
 
     @FXML
-    private TableColumn<?, ?> tableOfEmployeeExit;
-    @FXML
-    private TableView table;
+    private ChoiceBox<?> status;
 
     @FXML
     void backButton(ActionEvent event) {
@@ -26,6 +22,8 @@ public class EmployeeExitProcessingHR {
     }
 
     @FXML
-    public void submitButton(ActionEvent actionEvent) {
+    void submitButton(ActionEvent event) {
+
     }
+
 }

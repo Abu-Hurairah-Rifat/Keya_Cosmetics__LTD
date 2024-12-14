@@ -6,16 +6,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.TrackAttendance">
    <children>
-      <TextField fx:id="employeeIDforAttendance" alignment="TOP_CENTER" layoutX="225.0" layoutY="185.0" text="Enter your ID" />
-      <Label layoutX="266.0" layoutY="140.0" text="Employee ID" />
-      <Button layoutX="273.0" layoutY="235.0" mnemonicParsing="false" onAction="#submitAttendanceButton" text="Submit" />
+      <TextField fx:id="employeeIDforAttendance" alignment="TOP_CENTER" layoutX="266.0" layoutY="135.0" />
+      <Label layoutX="184.0" layoutY="139.0" text="Employee ID" />
+      <Button layoutX="362.0" layoutY="174.0" mnemonicParsing="false" onAction="#submitAttendanceButton" text="Submit" />
       <Label layoutX="203.0" layoutY="61.0" text="Track Attendance">
          <font>
             <Font name="Book Antiqua Bold" size="24.0" />
          </font>
       </Label>
+      <Button layoutX="469.0" layoutY="64.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
    </children>
 </AnchorPane>

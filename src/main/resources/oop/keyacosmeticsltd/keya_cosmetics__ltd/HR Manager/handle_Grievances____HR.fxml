@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.HR Manager.HandleGrievancesHR">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.HandleGrievancesHR">
    <children>
       <Label layoutX="185.0" layoutY="41.0" text="Handle Grievances">
          <font>
@@ -16,8 +16,11 @@
       </Label>
       <Label layoutX="176.0" layoutY="106.0" text="Employee ID:" />
       <Label layoutX="176.0" layoutY="148.0" text="Description:" />
-      <TextField layoutX="274.0" layoutY="102.0" />
-      <TextField layoutX="274.0" layoutY="144.0" />
-      <Button layoutX="370.0" layoutY="182.0" mnemonicParsing="false" text="Submit" />
+      <TextField fx:id="employeeID" layoutX="274.0" layoutY="102.0" />
+      <TextField fx:id="description" layoutX="274.0" layoutY="144.0" />
+      <Button layoutX="370.0" layoutY="255.0" mnemonicParsing="false" onAction="#submitButton" text="Submit" />
+      <Label layoutX="176.0" layoutY="191.0" text="Status:" />
+      <ChoiceBox fx:id="status" layoutX="273.0" layoutY="187.0" prefWidth="150.0" />
+      <Button layoutX="475.0" layoutY="48.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
    </children>
 </AnchorPane>

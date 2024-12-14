@@ -18,8 +18,8 @@
       <TextField fx:id="newEmployeeContact" layoutX="177.0" layoutY="139.0" />
       <Label layoutX="58.0" layoutY="176.0" prefHeight="18.0" prefWidth="85.0" text="Email" />
       <TextField fx:id="newEmployeeEmail" layoutX="177.0" layoutY="173.0" />
-      <Button layoutX="233.0" layoutY="216.0" mnemonicParsing="false" onAction="#addEmployeeButton" text="Add Employee" />
-      <TableView layoutX="54.0" layoutY="268.0" prefHeight="200.0" prefWidth="490.0">
+      <Button layoutX="369.0" layoutY="173.0" mnemonicParsing="false" onAction="#addEmployeeButton" text="Add Employee" />
+      <TableView layoutX="55.0" layoutY="230.0" prefHeight="155.0" prefWidth="490.0">
         <columns>
           <TableColumn prefWidth="155.20001220703125" text="Name" />
           <TableColumn prefWidth="101.5999755859375" text="ID" />
@@ -32,5 +32,6 @@
             <Font size="20.0" />
          </font>
       </Label>
+      <Button layoutX="503.0" layoutY="24.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
    </children>
 </AnchorPane>

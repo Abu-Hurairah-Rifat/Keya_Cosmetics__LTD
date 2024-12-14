@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.HR Manager.EmployeeExitProcessingHR">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.EmployeeExitProcessingHR">
    <children>
       <Label layoutX="155.0" layoutY="42.0" text="Employee Exit Processing">
          <font>
@@ -21,10 +21,10 @@
       <Label layoutX="129.0" layoutY="157.0" text="Reason For Exit:" />
       <TextField fx:id="employeeID" layoutX="230.0" layoutY="104.0" />
       <ChoiceBox fx:id="reasonForExit" layoutX="230.0" layoutY="153.0" prefWidth="150.0" />
-      <Button layoutX="417.0" layoutY="153.0" mnemonicParsing="false" text="Submit" />
+      <Button layoutX="417.0" layoutY="153.0" mnemonicParsing="false" onAction="#submitButton" text="Submit" />
       <Button layoutX="80.0" layoutY="334.0" mnemonicParsing="false" onAction="#backButton" text="Return to Dashboard" />
       <Separator layoutX="37.0" layoutY="90.0" prefHeight="3.0" prefWidth="536.0" />
-      <TableView layoutX="81.0" layoutY="208.0" prefHeight="106.0" prefWidth="446.0">
+      <TableView fx:id="table" layoutX="81.0" layoutY="208.0" prefHeight="106.0" prefWidth="446.0">
         <columns>
           <TableColumn fx:id="tableOfEmployeeExit" prefWidth="161.5999755859375" text="Employee ID" />
           <TableColumn prefWidth="129.60003662109375" text="Reason For Exit" />
