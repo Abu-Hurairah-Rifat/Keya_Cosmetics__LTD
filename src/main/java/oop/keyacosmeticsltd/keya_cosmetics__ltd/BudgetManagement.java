@@ -51,15 +51,7 @@ public class BudgetManagement {
 
     private final ObservableList<BudgetDetailsM> budgetDetailsList = FXCollections.observableArrayList();
 
-    @FXML
-    public void initialize() {
-        deptCombobox.getItems().addAll("Marketing", "R&D", "Production", "Sales", "Logistics");
-        productnamecolumn.setCellValueFactory(new PropertyValueFactory<>("productName"));
-        budegetcolumn.setCellValueFactory(new PropertyValueFactory<>("budget"));
-        deptcolumn.setCellValueFactory(new PropertyValueFactory<>("department"));
-        allocationdatecolumn.setCellValueFactory(new PropertyValueFactory<>("allocationDate"));
-        tableviewfordetails.setItems(budgetDetailsList);
-    }
+
 
     @FXML
     void addbudgrtonactionbutton(ActionEvent event) {
@@ -125,8 +117,17 @@ public class BudgetManagement {
 
 
     }
-
+    @FXML
+    public void initialize() {
+        deptCombobox.getItems().addAll("Marketing", "R&D", "Production", "Sales", "Logistics");
+        productnamecolumn.setCellValueFactory(new PropertyValueFactory<>("productName"));
+        budegetcolumn.setCellValueFactory(new PropertyValueFactory<>("budget"));
+        deptcolumn.setCellValueFactory(new PropertyValueFactory<>("department"));
+        allocationdatecolumn.setCellValueFactory(new PropertyValueFactory<>("allocationDate"));
+        tableviewfordetails.setItems(budgetDetailsList);
+    }
 }
+
 
 
 
