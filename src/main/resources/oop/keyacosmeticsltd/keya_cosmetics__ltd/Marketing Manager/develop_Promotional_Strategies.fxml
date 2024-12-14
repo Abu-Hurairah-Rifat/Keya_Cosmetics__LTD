@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.DevelopPromotionalStrategies">
+   <children>
+      <Label layoutX="132.0" layoutY="28.0" text="Develop Promotional Strategies">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="84.0" text="Promotion Name" />
+      <Label layoutX="87.0" layoutY="119.0" text="Discount Percentage" />
+      <Label layoutX="87.0" layoutY="153.0" text="Duration" />
+      <Label layoutX="86.0" layoutY="191.0" text="Product" />
+      <TextField fx:id="promotionName" layoutX="248.0" layoutY="80.0" />
+      <TextField fx:id="discountPercentage" layoutX="248.0" layoutY="115.0" />
+      <TextField fx:id="duration" layoutX="248.0" layoutY="149.0" />
+      <TextField fx:id="product" layoutX="248.0" layoutY="187.0" />
+      <Button layoutX="504.0" layoutY="33.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+      <Button layoutX="442.0" layoutY="188.0" mnemonicParsing="false" onAction="#submitButton" text="Submit" />
+      <TableView fx:id="table" layoutX="69.0" layoutY="234.0" prefHeight="142.0" prefWidth="481.0">
+        <columns>
+          <TableColumn prefWidth="183.20001220703125" text="Promotion Name" />
+          <TableColumn prefWidth="160.79998779296875" text="Discount Percentage" />
+            <TableColumn prefWidth="68.0" text="Duration" />
+            <TableColumn prefWidth="70.39996337890625" text="Product" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
