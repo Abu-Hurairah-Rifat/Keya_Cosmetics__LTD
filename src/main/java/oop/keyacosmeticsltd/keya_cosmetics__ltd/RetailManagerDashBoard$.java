@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 
-public class RetailManagerDashBoard {
+public class RetailManagerDashBoard$ {
 
     @FXML
     private AnchorPane dashboardView;
