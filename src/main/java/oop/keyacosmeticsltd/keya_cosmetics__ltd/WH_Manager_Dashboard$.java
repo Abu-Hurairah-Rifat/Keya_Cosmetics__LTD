@@ -33,7 +33,7 @@ public class WH_Manager_Dashboard$ {
 
     @FXML
     void logOutButtonActon(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Clean and Safety Panel view $.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("LogIn Page.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);

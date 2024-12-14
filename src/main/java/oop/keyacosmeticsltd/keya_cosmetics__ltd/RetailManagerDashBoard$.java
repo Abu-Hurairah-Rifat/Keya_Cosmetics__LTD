@@ -77,7 +77,7 @@ public class RetailManagerDashBoard$ {
 
     @FXML
     void logOutButtonOnAction(ActionEvent event)throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Product Development Manager/Collaborating With Marketing.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("LogIn Page.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
