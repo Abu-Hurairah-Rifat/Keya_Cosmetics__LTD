@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="455.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantDepriciationCalculatorController">
    <children>
       <Label layoutX="216.0" layoutY="14.0" prefHeight="36.0" prefWidth="200.0" text="Depriciation Calculator">
@@ -16,27 +15,27 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TableView layoutX="5.0" layoutY="193.0" prefHeight="258.0" prefWidth="622.0">
+      <TableView fx:id="depreciationTableView" layoutX="5.0" layoutY="193.0" prefHeight="258.0" prefWidth="622.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="No" />
-          <TableColumn prefWidth="112.0" text="Equipement Name" />
-            <TableColumn prefWidth="141.0" text="Purchase Date(D/M/Y)" />
-            <TableColumn prefWidth="97.0" text="Purchase Cost" />
-            <TableColumn prefWidth="92.0" text="Salvage Value" />
-            <TableColumn prefWidth="104.0" text="Depriciation" />
+          <TableColumn fx:id="noTableColumn" prefWidth="75.0" text="No" />
+          <TableColumn fx:id="equipNameTableColumn" prefWidth="112.0" text="Equipement Name" />
+            <TableColumn fx:id="purchaseDateTableColumn" prefWidth="141.0" text="Purchase Date" />
+            <TableColumn fx:id="purchaseCostTableColumn" prefWidth="97.0" text="Purchase Cost" />
+            <TableColumn fx:id="salvageValueTableColumn" prefWidth="92.0" text="Salvage Value" />
+            <TableColumn fx:id="depreciationTableColumn" prefWidth="104.0" text="Depriciation" />
         </columns>
       </TableView>
-      <Button layoutX="57.0" layoutY="154.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="165.0" text="Straight Line(SLD)" />
-      <Button layoutX="390.0" layoutY="154.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" text="Declining Balance(DB)" />
+      <Button layoutX="57.0" layoutY="154.0" mnemonicParsing="false" onAction="#sldDepriciationOnClick" prefHeight="25.0" prefWidth="165.0" text="Straight Line(SLD)" />
+      <Button layoutX="390.0" layoutY="154.0" mnemonicParsing="false" onAction="#dbDepriciationOnClick" prefHeight="25.0" prefWidth="175.0" text="Declining Balance(DB)" />
       <Label layoutX="14.0" layoutY="50.0" prefHeight="36.0" prefWidth="117.0" text="Equipement Entry:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="100.0" layoutY="86.0" prefHeight="25.0" prefWidth="63.0" />
-      <TextField layoutX="283.0" layoutY="86.0" prefHeight="25.0" prefWidth="148.0" />
+      <TextField fx:id="equip_NoTextField" layoutX="100.0" layoutY="86.0" prefHeight="25.0" prefWidth="63.0" />
+      <TextField fx:id="salvageValue_TextField" layoutX="283.0" layoutY="86.0" prefHeight="25.0" prefWidth="148.0" />
       <Label layoutX="14.0" layoutY="86.0" prefHeight="25.0" prefWidth="85.0" text="Equipment No:" />
       <Label layoutX="199.0" layoutY="86.0" prefHeight="25.0" prefWidth="77.0" text="Salvage Value:" />
-      <Button layoutX="464.0" layoutY="86.0" mnemonicParsing="false" text="Enter" />
+      <Button layoutX="464.0" layoutY="86.0" mnemonicParsing="false" onAction="#enterValueOnClick" text="Enter" />
    </children>
 </AnchorPane>
