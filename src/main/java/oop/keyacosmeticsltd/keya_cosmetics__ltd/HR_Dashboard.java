@@ -24,12 +24,24 @@ public class HR_Dashboard {
     }
 
     @FXML
-    void createEmployeeAccountButton(ActionEvent event) {
+    void createEmployeeAccountButton(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("HR Manager/Create_Employee_Accounts.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
 
     }
 
     @FXML
-    void editEmployeeAccountsButton(ActionEvent event) {
+    void editEmployeeAccountsButton(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("HR Manager/edit_Employee_Accounts.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
 
     }
 
