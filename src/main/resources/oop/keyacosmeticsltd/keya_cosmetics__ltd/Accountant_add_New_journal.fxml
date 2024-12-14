@@ -1,37 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="432.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantJournalController">
+<AnchorPane prefHeight="498.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantJournalController">
    <children>
       <Label layoutX="212.0" prefHeight="43.0" prefWidth="160.0" text="New Journal Entry">
          <font>
             <Font name="Microsoft PhagsPa Bold" size="18.0" />
          </font>
       </Label>
-      <TableView layoutX="13.0" layoutY="77.0" prefHeight="297.0" prefWidth="544.0">
+      <TableView fx:id="journalTableView" layoutX="13.0" layoutY="181.0" prefHeight="268.0" prefWidth="544.0">
         <columns>
-          <TableColumn prefWidth="59.0" text=" No" />
-          <TableColumn prefWidth="89.0" text="Date(D/M/Y)" />
-            <TableColumn prefWidth="182.0" text="Account" />
-            <TableColumn prefWidth="109.0" text="Debit" />
-            <TableColumn prefWidth="104.0" text="Credit" />
+          <TableColumn fx:id="entryNoTableColumn" prefWidth="59.0" text=" No" />
+          <TableColumn fx:id="entryDateTableColumn" prefWidth="89.0" text="Date(D/M/Y)" />
+            <TableColumn fx:id="accountTableColumn" prefWidth="182.0" text="Account" />
+            <TableColumn fx:id="debitTableColumn" prefWidth="109.0" text="Debit" />
+            <TableColumn fx:id="creditTableColumn" prefWidth="104.0" text="Credit" />
         </columns>
       </TableView>
-      <TextField layoutX="115.0" layoutY="43.0" />
+      <TextField fx:id="journalNumberTextField" layoutX="115.0" layoutY="43.0" />
       <Label layoutX="21.0" layoutY="43.0" prefHeight="25.0" prefWidth="107.0" text="Journlal Number" />
-      <Label layoutX="285.0" layoutY="387.0" text="Total:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="352.0" layoutY="384.0" prefHeight="25.0" prefWidth="98.0" text="Dr." />
-      <Label layoutX="451.0" layoutY="384.0" prefHeight="25.0" prefWidth="107.0" text="Cr." />
+      <TextField fx:id="entryNoTextField" layoutX="115.0" layoutY="74.0" />
+      <TextField fx:id="accountTextField" layoutX="376.0" layoutY="74.0" />
+      <TextField fx:id="dr_cr_AmountTextField" layoutX="377.0" layoutY="110.0" />
+      <Button layoutX="378.0" layoutY="143.0" mnemonicParsing="false" onAction="#addEntryOnClick" prefHeight="25.0" prefWidth="149.0" text="Add Entry" />
+      <DatePicker fx:id="transaction_dateDatepicker" layoutX="117.0" layoutY="110.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="21.0" layoutY="74.0" prefHeight="25.0" prefWidth="85.0" text="Entry No" />
+      <Label layoutX="21.0" layoutY="110.0" prefHeight="25.0" prefWidth="85.0" text="Date" />
+      <Label layoutX="285.0" layoutY="74.0" prefHeight="25.0" prefWidth="85.0" text="Account" />
+      <Label layoutX="285.0" layoutY="110.0" prefHeight="25.0" prefWidth="85.0" text="Amount" />
+      <RadioButton fx:id="debitRadioButton" layoutX="284.0" layoutY="47.0" mnemonicParsing="false" text="Debit" />
+      <RadioButton fx:id="creditRadioButton" layoutX="438.0" layoutY="47.0" mnemonicParsing="false" text="Credit" />
    </children>
 </AnchorPane>

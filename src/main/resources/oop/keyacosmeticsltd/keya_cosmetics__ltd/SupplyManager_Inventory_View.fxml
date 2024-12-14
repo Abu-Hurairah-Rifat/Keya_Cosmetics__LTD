@@ -8,25 +8,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantInventoryViewController">
+<AnchorPane prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.SupplyManagerInventoryViewController">
    <children>
       <Label layoutX="176.0" layoutY="21.0" prefHeight="28.0" prefWidth="229.0" text="Material Inventory Status" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <TableView layoutX="31.0" layoutY="134.0" prefHeight="297.0" prefWidth="532.0">
+      <TableView fx:id="materialsTableView" layoutX="10.0" layoutY="137.0" prefHeight="297.0" prefWidth="571.0">
         <columns>
-          <TableColumn prefWidth="140.0" text="Product name" />
-          <TableColumn prefWidth="114.0" text="Category" />
-            <TableColumn prefWidth="92.0" text="Purchase Date" />
-            <TableColumn prefWidth="97.0" text="Quantity" />
-            <TableColumn prefWidth="88.0" text="Price per Unit" />
+          <TableColumn fx:id="productNameTableColumn" prefWidth="137.0" text="Product name" />
+          <TableColumn fx:id="catagortTableColumn" prefWidth="90.0" text="Category" />
+            <TableColumn fx:id="purchaseDateTableColumn" prefWidth="91.0" text="Purchase Date" />
+            <TableColumn fx:id="quantityTableColumn" prefWidth="81.0" text="Quantity" />
+            <TableColumn fx:id="ppuTableColumn" prefWidth="96.0" text="Price per Unit" />
+            <TableColumn fx:id="ItemIDTableColumn" prefWidth="75.0" text="Product ID" />
         </columns>
       </TableView>
-      <Button layoutX="31.0" layoutY="94.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="133.0" text="Materials in Storage" />
-      <Button layoutX="496.0" layoutY="60.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="53.0" text="Search" />
-      <TextField layoutX="347.0" layoutY="62.0" />
-      <Button layoutX="348.0" layoutY="97.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="201.0" text="Edit Inventory" />
+      <Button layoutX="31.0" layoutY="94.0" mnemonicParsing="false" onAction="#showMaterialsInStorageOnClick" prefHeight="28.0" prefWidth="133.0" text="Materials in Storage" />
+      <Button layoutX="496.0" layoutY="60.0" mnemonicParsing="false" onAction="#searchOnClick" prefHeight="28.0" prefWidth="94.0" text=" Search by Category" />
+      <TextField fx:id="searchTextField" layoutX="347.0" layoutY="62.0" />
    </children>
 </AnchorPane>
