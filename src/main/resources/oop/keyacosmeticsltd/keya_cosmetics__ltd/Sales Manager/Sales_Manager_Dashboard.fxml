@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="454.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.Sales_Manager_Dashboard_Controller">
+<AnchorPane prefHeight="454.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.SalesManager">
    <children>
       <Button layoutX="55.0" layoutY="107.0" mnemonicParsing="false" onAction="#establishsalestargetactionbutton" prefHeight="26.0" prefWidth="189.0" text="Establish sales Target" />
       <Button layoutX="54.0" layoutY="324.0" mnemonicParsing="false" onAction="#coordinationgtoMarketingactionbutton" prefHeight="26.0" prefWidth="189.0" text="Coordinating to Marketing" />

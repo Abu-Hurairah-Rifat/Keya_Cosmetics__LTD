@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="628.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.Product_Development_Dashboard_Controller">
+<AnchorPane prefHeight="536.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.ProductDevelopManagerDashboard">
    <children>
       <Label fx:id="titlelabel" alignment="CENTER" layoutX="143.0" layoutY="47.0" prefHeight="38.0" prefWidth="574.0" text="Product Development Manager Dashboard">
          <font>
@@ -17,7 +16,7 @@
       <Button layoutX="69.0" layoutY="423.0" mnemonicParsing="false" onAction="#innovationpipelineManagementonactionbutton" prefHeight="26.0" prefWidth="211.0" text="Innovation Pipeline Management" />
       <Button layoutX="69.0" layoutY="342.0" mnemonicParsing="false" onAction="#packagingonactionbutton" prefHeight="26.0" prefWidth="211.0" text=" Packaging and Design Collaboration" />
       <Button layoutX="69.0" layoutY="259.0" mnemonicParsing="false" onAction="#Manageproducttestingonactionbutton" prefHeight="26.0" prefWidth="211.0" text="Manage product testing" />
-      <Button layoutX="522.0" layoutY="547.0" mnemonicParsing="false" onAction="#logoutonactionbutton" prefHeight="26.0" prefWidth="211.0" text="Logout">
+      <Button layoutX="562.0" layoutY="498.0" mnemonicParsing="false" onAction="#logoutonactionbutton" prefHeight="26.0" prefWidth="211.0" text="Logout">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

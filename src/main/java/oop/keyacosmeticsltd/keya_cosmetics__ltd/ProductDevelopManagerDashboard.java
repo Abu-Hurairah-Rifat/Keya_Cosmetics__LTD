@@ -11,14 +11,26 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class SalesManager {
+public class ProductDevelopManagerDashboard {
 
     @FXML
-    private Label headlinelabel;
+    private Label titlelabel;
 
     @FXML
-    void coordinationgtoMarketingactionbutton(ActionEvent event)  throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Sales Manager/Coordinate with Marketing.fxml"));
+    void Collaborateonactionbutton(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Product Development Manager/Collaborating With Marketing.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
+
+
+    }
+
+    @FXML
+    void CompetitiveAnalysisonactionbutton(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Product Development Manager/Competitive Analysis.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -28,8 +40,8 @@ public class SalesManager {
     }
 
     @FXML
-    void createintensiveprogramactionbutton(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Sales Manager/Create incentive Programs.fxml"));
+    void Improvingonactionbutton(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Product Development Manager/Improving Existing Products.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -39,8 +51,8 @@ public class SalesManager {
     }
 
     @FXML
-    void establishsalestargetactionbutton(ActionEvent event)  throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Sales Manager/Establish Sales Target.fxml"));
+    void Manageproducttestingonactionbutton(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Product Development Manager/Manage Product Testing.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -50,13 +62,36 @@ public class SalesManager {
     }
 
     @FXML
-    void expandsalesactionbutton(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Sales Manager/Expand Sales.fxml"));
+    void budgetsforproductdevelopmentonactionbutton(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Product Development Manager/Budget Management.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
         currentStage.setScene(newScene);
         currentStage.show();
+
+    }
+
+    @FXML
+    void develpnewcosmeticonactionbutton(ActionEvent event)  throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Product Development Manager/Cosmetic Product Development.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
+
+    }
+
+    @FXML
+    void innovationpipelineManagementonactionbutton(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Product Development Manager/Innovation Pipeline .fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
+
 
     }
 
@@ -66,47 +101,13 @@ public class SalesManager {
     }
 
     @FXML
-    void managecustomeraccount(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Sales Manager/Manage Customer Account.fxml"));
+    void packagingonactionbutton(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Product Development Manager/Packaging and Design.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
         currentStage.setScene(newScene);
         currentStage.show();
-
-    }
-
-    @FXML
-    void monitorsalesteamactionbutton(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Sales Manager/Sales Team Performance.fxml"));
-        Parent parent = loader.load();
-        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Scene newScene = new Scene(parent);
-        currentStage.setScene(newScene);
-        currentStage.show();
-
-    }
-
-    @FXML
-    void pricingstrategyactionbutton(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Sales Manager/Pricing Strategy.fxml"));
-        Parent parent = loader.load();
-        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Scene newScene = new Scene(parent);
-        currentStage.setScene(newScene);
-        currentStage.show();
-
-    }
-
-    @FXML
-    void retailpartnersanddistributorsactionbutton(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Sales Manager/Manage Retail Partner and Distributors.fxml"));
-        Parent parent = loader.load();
-        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Scene newScene = new Scene(parent);
-        currentStage.setScene(newScene);
-        currentStage.show();
-
 
     }
 

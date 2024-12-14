@@ -3,14 +3,10 @@ package oop.keyacosmeticsltd.keya_cosmetics__ltd;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class SupplyManagerDashboardController
 {
-
     @javafx.fxml.FXML
     public void initialize() {
     }
@@ -136,5 +132,4 @@ public class SupplyManagerDashboardController
             //
         }
     }
-
 }

@@ -2,12 +2,19 @@ package oop.keyacosmeticsltd.keya_cosmetics__ltd;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
-public class SalesTargetController  {
+import java.io.IOException;
+
+public class EstablishSalesTargetController  {
 
     @FXML
     private DatePicker deadlinedatepicker;
@@ -36,7 +43,13 @@ public class SalesTargetController  {
     }
 
     @FXML
-    void backonactionbutton(ActionEvent event) {
+    void backonactionbutton(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Sales Manager/Establish Sales Target.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
 
     }
 

@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane fx:id="view" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.MarketingCollaboration">
+<AnchorPane fx:id="view" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.CollaborationController$">
    <children>
       <Label fx:id="tittleMarketingCollaborationPanel" layoutX="148.0" layoutY="14.0" text="Marketing Collaboration Panel">
          <font>
