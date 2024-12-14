@@ -2,12 +2,12 @@ package oop.keyacosmeticsltd.keya_cosmetics__ltd;
 
 import java.time.LocalDate;
 
-public class AccountantInventory {
+public class SupplyManagerInventoryView {
     private String itemName, category;
     private LocalDate storedDate;
-    private int quantity, ppu;
+    private int  quantity, ppu;
 
-    public AccountantInventory(String itemName, String category, LocalDate storedDate, int quantity, int ppu) {
+    public SupplyManagerInventoryView(String itemName, String category, LocalDate storedDate, int quantity, int ppu) {
         this.itemName = itemName;
         this.category = category;
         this.storedDate = storedDate;

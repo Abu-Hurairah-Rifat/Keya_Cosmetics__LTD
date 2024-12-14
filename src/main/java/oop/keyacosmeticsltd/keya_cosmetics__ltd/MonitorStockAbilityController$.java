@@ -21,7 +21,7 @@ public class MonitorStockAbilityController$ {
     private Label dateLabel;
 
     @FXML
-    private TableColumn<?, ?> dateTable;
+    private TableColumn<MonitorStockAbilityController$,String> dateTable;
 
     @FXML
     private RadioButton inStockRadioButton;
@@ -36,7 +36,7 @@ public class MonitorStockAbilityController$ {
     private Label pNameLabel;
 
     @FXML
-    private TableColumn<?, ?> pNameTable;
+    private TableColumn<MonitorStockAbilityController$,String> pNameTable;
 
     @FXML
     private TextField priceField;
@@ -45,16 +45,16 @@ public class MonitorStockAbilityController$ {
     private Label priceLabel;
 
     @FXML
-    private TableColumn<?, ?> priceTable;
+    private TableColumn<MonitorStockAbilityController$,String> priceTable;
 
     @FXML
     private Label statusLabel;
 
     @FXML
-    private TableColumn<?, ?> statusTable;
+    private TableColumn<MonitorStockAbilityController$,String> statusTable;
 
     @FXML
-    private TableView<?> table;
+    private TableView<MonitorStockAbilityController$> table;
 
     @FXML
     private Label tittleInventoryManagement;

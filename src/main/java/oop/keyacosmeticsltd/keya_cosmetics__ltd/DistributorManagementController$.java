@@ -18,7 +18,7 @@ public class DistributorManagementController$ {
     private Label amountLabel;
 
     @FXML
-    private TableColumn<?, ?> amountTable;
+    private TableColumn<DistributorManagementController$, String> amountTable;
 
     @FXML
     private RadioButton completedRadioButton;
@@ -30,7 +30,7 @@ public class DistributorManagementController$ {
     private Label dateLabel;
 
     @FXML
-    private TableColumn<?, ?> dateTable;
+    private TableColumn<DistributorManagementController$, String> dateTable;
 
     @FXML
     private TextField distributorNameField;
@@ -39,7 +39,7 @@ public class DistributorManagementController$ {
     private Label distributorNameLabel;
 
     @FXML
-    private TableColumn<?, ?> distributorNameTable;
+    private TableColumn<DistributorManagementController$, String> distributorNameTable;
 
     @FXML
     private RadioButton pendingRadioButton;
@@ -54,10 +54,10 @@ public class DistributorManagementController$ {
     private Label statusLabel;
 
     @FXML
-    private TableColumn<?, ?> statusTable;
+    private TableColumn<DistributorManagementController$, String> statusTable;
 
     @FXML
-    private TableView<?> table;
+    private TableView<DistributorManagementController$> table;
 
     @FXML
     private Label tittleDistributorManagementPanel;

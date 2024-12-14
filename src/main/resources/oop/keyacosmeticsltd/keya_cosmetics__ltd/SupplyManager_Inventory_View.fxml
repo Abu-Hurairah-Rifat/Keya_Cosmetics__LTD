@@ -26,7 +26,7 @@
         </columns>
       </TableView>
       <Button layoutX="31.0" layoutY="94.0" mnemonicParsing="false" onAction="#showMaterialsInStorageOnClick" prefHeight="28.0" prefWidth="133.0" text="Materials in Storage" />
-      <Button layoutX="496.0" layoutY="60.0" mnemonicParsing="false" onAction="#searchOnClick" prefHeight="28.0" prefWidth="94.0" text=" Search by Category" />
-      <TextField fx:id="searchTextField" layoutX="347.0" layoutY="62.0" />
+      <Button layoutX="411.0" layoutY="60.0" mnemonicParsing="false" onAction="#searchOnClick" prefHeight="28.0" prefWidth="179.0" text=" Search by Category" />
+      <TextField fx:id="searchTextField" layoutX="256.0" layoutY="62.0" />
    </children>
 </AnchorPane>

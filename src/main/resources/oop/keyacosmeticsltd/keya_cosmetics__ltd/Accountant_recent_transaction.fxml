@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantRecentTransactionController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantRecentTransactionController">
+   <children>
+      <Label layoutX="200.0" layoutY="14.0" prefHeight="38.0" prefWidth="174.0" text="Recent Transactions">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="62.0" layoutY="75.0" mnemonicParsing="false" onAction="#showThisWeekTransactionOnClick" prefHeight="38.0" prefWidth="93.0" text="This Week" />
+      <Button layoutX="433.0" layoutY="75.0" mnemonicParsing="false" onAction="#showThiDayTransactionOnClick" prefHeight="38.0" prefWidth="93.0" text="This Day" />
+      <TableView fx:id="reecentTransactionTableView" layoutX="62.0" layoutY="127.0" prefHeight="200.0" prefWidth="466.0">
+        <columns>
+          <TableColumn fx:id="JournalNoTableColumn" prefWidth="75.0" text="Journal No" />
+          <TableColumn fx:id="entryNoTableColumn" prefWidth="75.0" text="Entry No" />
+            <TableColumn fx:id="dateTableColumn" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="accountTableColumn" prefWidth="75.0" text="Account" />
+            <TableColumn fx:id="t_typeTaleColumn" prefWidth="75.0" text="T. Type" />
+            <TableColumn fx:id="amountTableColumn" prefWidth="90.0" text="Amount" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>
