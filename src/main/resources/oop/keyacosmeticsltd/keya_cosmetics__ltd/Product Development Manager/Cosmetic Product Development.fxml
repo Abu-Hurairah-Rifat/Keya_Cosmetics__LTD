@@ -26,12 +26,10 @@
       <CheckBox fx:id="teenagercheckbox" layoutX="474.0" layoutY="217.0" mnemonicParsing="false" text="Teenager" />
       <CheckBox fx:id="womencheckbox" layoutX="314.0" layoutY="217.0" mnemonicParsing="false" text="Women" />
       <CheckBox fx:id="menoptioncheckbox" layoutX="170.0" layoutY="217.0" mnemonicParsing="false" text="Men" />
-      <Label layoutX="39.0" layoutY="263.0" text="Market Research Details" />
-      <TextField fx:id="marketresearchdetailstextfield" layoutX="193.0" layoutY="259.0" />
-      <Label layoutX="39.0" layoutY="305.0" text="Estimated Budget" />
-      <TextField fx:id="estimatedbudgetTextfield" layoutX="194.0" layoutY="301.0" />
-      <Button layoutX="90.0" layoutY="360.0" mnemonicParsing="false" onAction="#submitonactionbutton" prefHeight="26.0" prefWidth="225.0" text="Submit" />
-      <Button layoutX="361.0" layoutY="360.0" mnemonicParsing="false" onAction="#clearonactionbutton" prefHeight="26.0" prefWidth="225.0" text="Clear" />
+      <Label layoutX="38.0" layoutY="272.0" text="Estimated Budget" />
+      <TextField fx:id="estimatedbudgetTextfield" layoutX="193.0" layoutY="268.0" />
+      <Button layoutX="63.0" layoutY="331.0" mnemonicParsing="false" onAction="#submitonactionbutton" prefHeight="26.0" prefWidth="225.0" text="Submit" />
+      <Button layoutX="361.0" layoutY="331.0" mnemonicParsing="false" onAction="#clearonactionbutton" prefHeight="26.0" prefWidth="225.0" text="Clear" />
       <TableView fx:id="tableviewfordetails" layoutX="16.0" layoutY="404.0" prefHeight="200.0" prefWidth="664.0">
         <columns>
           <TableColumn fx:id="productnamecolumn" prefWidth="155.2000389099121" text="Product Name" />

@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -24,12 +23,11 @@
       <TextField fx:id="campaignNametextfield" layoutX="191.0" layoutY="119.0" />
       <TextField fx:id="productnametextfield" layoutX="191.0" layoutY="162.0" />
       <TextField fx:id="promotionbudgettextfield" layoutX="541.0" layoutY="162.0" />
-      <DatePicker fx:id="launchdatepicker" layoutX="524.0" layoutY="119.0" />
       <Label layoutX="45.0" layoutY="229.0" text="Marketing Channels" />
       <CheckBox fx:id="TVcheckbox" layoutX="197.0" layoutY="229.0" mnemonicParsing="false" text="TV" />
       <CheckBox fx:id="socialmediacheckbox" layoutX="349.0" layoutY="229.0" mnemonicParsing="false" text="Social Media" />
-      <Button layoutX="107.0" layoutY="283.0" mnemonicParsing="false" onAction="#submitplanactionbutton" prefHeight="26.0" prefWidth="234.0" text="Submit Plan" />
-      <Button layoutX="445.0" layoutY="283.0" mnemonicParsing="false" onAction="#requestmarketingapprovalactionbutton" prefHeight="26.0" prefWidth="234.0" text="Request Marketing Approval" />
+      <Button layoutX="52.0" layoutY="283.0" mnemonicParsing="false" onAction="#Addactionbutton" prefHeight="26.0" prefWidth="175.0" text="Add" />
+      <Button layoutX="306.0" layoutY="283.0" mnemonicParsing="false" onAction="#removeactionbutton" prefHeight="26.0" prefWidth="175.0" text="Remove" />
       <TableView fx:id="tableview" layoutX="70.0" layoutY="330.0" prefHeight="200.0" prefWidth="623.0">
         <columns>
           <TableColumn fx:id="campaignNametablecolumn" prefWidth="158.39996337890625" text="Campain Name" />
@@ -43,5 +41,7 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Button>
+      <Button layoutX="524.0" layoutY="283.0" mnemonicParsing="false" onAction="#clearfieldsactionbutton" prefHeight="26.0" prefWidth="175.0" text="Clear Fields" />
+      <TextField fx:id="datetextfield" layoutX="542.0" layoutY="111.0" />
    </children>
 </AnchorPane>
