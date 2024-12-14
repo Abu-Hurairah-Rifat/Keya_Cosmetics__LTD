@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="471.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantWagesController">
    <children>
       <Label layoutX="271.0" layoutY="14.0" prefHeight="27.0" prefWidth="58.0" text="Wage">
@@ -18,28 +17,28 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TableView layoutX="41.0" layoutY="80.0" prefHeight="200.0" prefWidth="519.0">
+      <TableView fx:id="wageTableview" layoutX="41.0" layoutY="80.0" prefHeight="200.0" prefWidth="519.0">
         <columns>
-          <TableColumn prefWidth="117.0" text="Emplyee ID" />
-          <TableColumn prefWidth="213.0" text="Name" />
-            <TableColumn prefWidth="104.0" text="Wage Ammount" />
-            <TableColumn prefWidth="84.0" text="Wage Status" />
+          <TableColumn fx:id="employeeIDTableColumn" prefWidth="117.0" text="Emplyee ID" />
+          <TableColumn fx:id="nameTableColumn" prefWidth="213.0" text="Name" />
+            <TableColumn fx:id="wageAmountTableColumn" prefWidth="104.0" text="Wage Ammount" />
+            <TableColumn fx:id="wageStatusTableColumn" prefWidth="84.0" text="Wage Status" />
         </columns>
       </TableView>
       <Label layoutX="41.0" layoutY="48.0" text="Wage Status:" />
-      <RadioButton layoutX="122.0" layoutY="48.0" mnemonicParsing="false" text="Paid" />
-      <RadioButton layoutX="179.0" layoutY="48.0" mnemonicParsing="false" text="Unpaid" />
+      <RadioButton fx:id="paidRadioButton" layoutX="122.0" layoutY="48.0" mnemonicParsing="false" text="Paid" />
+      <RadioButton fx:id="unpaidRadioButton" layoutX="179.0" layoutY="48.0" mnemonicParsing="false" text="Unpaid" />
       <Label layoutX="46.0" layoutY="388.0" prefHeight="27.0" prefWidth="79.0" text="Bonus:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="135.0" layoutY="319.0" />
+      <TextField fx:id="employeeIDTextField" layoutX="135.0" layoutY="319.0" />
       <Label layoutX="46.0" layoutY="319.0" prefHeight="25.0" prefWidth="70.0" text="Employee ID:" />
-      <TextField layoutX="135.0" layoutY="354.0" />
-      <TextField layoutX="135.0" layoutY="389.0" />
+      <TextField fx:id="wageTextField" layoutX="135.0" layoutY="354.0" />
+      <TextField fx:id="bonusTextField" layoutX="135.0" layoutY="389.0" />
       <Label layoutX="46.0" layoutY="354.0" prefHeight="25.0" prefWidth="70.0" text="Wage:" />
-      <Button layoutX="309.0" layoutY="316.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="118.0" text="Pay" />
-      <TextArea layoutX="444.0" layoutY="316.0" prefHeight="101.0" prefWidth="149.0" />
+      <Button layoutX="309.0" layoutY="316.0" mnemonicParsing="false" onAction="#payWageOnClick" prefHeight="101.0" prefWidth="118.0" text="Pay" />
+      <TextArea fx:id="messageTextArea" layoutX="444.0" layoutY="316.0" prefHeight="101.0" prefWidth="149.0" />
    </children>
 </AnchorPane>

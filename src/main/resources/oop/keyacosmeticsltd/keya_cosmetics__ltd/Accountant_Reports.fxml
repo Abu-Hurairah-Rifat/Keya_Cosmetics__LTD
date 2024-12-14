@@ -10,11 +10,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="567.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.AccountantReportsController">
    <children>
-      <PieChart layoutX="26.0" layoutY="243.0" prefHeight="202.0" prefWidth="263.0" />
-      <LineChart layoutX="306.0" layoutY="234.0" prefHeight="221.0" prefWidth="324.0">
+      <PieChart fx:id="pieChart" layoutX="26.0" layoutY="243.0" prefHeight="202.0" prefWidth="263.0" />
+      <LineChart fx:id="lineChart" layoutX="306.0" layoutY="234.0" prefHeight="221.0" prefWidth="324.0">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
@@ -27,11 +26,11 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="84.0" layoutY="116.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" text="Revenue" />
-      <Button layoutX="269.0" layoutY="116.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" text="Expenses" />
-      <Button layoutX="468.0" layoutY="116.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" text="Profit" />
-      <DatePicker layoutX="269.0" layoutY="71.0" prefHeight="25.0" prefWidth="100.0" />
-      <DatePicker layoutX="468.0" layoutY="71.0" prefHeight="25.0" prefWidth="100.0" />
+      <Button layoutX="84.0" layoutY="116.0" mnemonicParsing="false" onAction="#showRevenueOnClick" prefHeight="70.0" prefWidth="100.0" text="Revenue" />
+      <Button layoutX="269.0" layoutY="116.0" mnemonicParsing="false" onAction="#showExpensesOnClick" prefHeight="70.0" prefWidth="100.0" text="Expenses" />
+      <Button layoutX="468.0" layoutY="116.0" mnemonicParsing="false" onAction="#showProfitOnClick" prefHeight="70.0" prefWidth="100.0" text="Profit" />
+      <DatePicker fx:id="fromDatePicker" layoutX="269.0" layoutY="71.0" prefHeight="25.0" prefWidth="100.0" />
+      <DatePicker fx:id="toDatePicker" layoutX="468.0" layoutY="71.0" prefHeight="25.0" prefWidth="100.0" />
       <Label layoutX="84.0" layoutY="67.0" prefHeight="25.0" prefWidth="100.0" text="Time Period:">
          <font>
             <Font name="System Bold" size="14.0" />
