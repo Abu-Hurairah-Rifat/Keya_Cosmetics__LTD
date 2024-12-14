@@ -39,7 +39,7 @@ public class Product_Development_Controller {
 
     @FXML
     void CompetitiveAnalysisonactionbutton(ActionEvent event) {
-        switchScene(event, "Competitive Analysis.fxml", "Product Development - Competitive Analysis");
+        switchScene(event, "Competitive_Analysis.fxml", "Product Development - Competitive Analysis");
     }
 
     @FXML
@@ -49,7 +49,7 @@ public class Product_Development_Controller {
 
     @FXML
     void Manageproducttestingonactionbutton(ActionEvent event) {
-        switchScene(event, "Manage Product Testing.fxml", "Product Development - Manage Product Testing");
+        switchScene(event, "Manage_Product_Testing.fxml", "Product Development - Manage Product Testing");
     }
 
     @FXML

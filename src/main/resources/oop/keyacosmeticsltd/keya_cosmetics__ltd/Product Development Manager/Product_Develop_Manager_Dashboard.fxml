@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="628.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.ProductDevelopManagerDashboard">
+<AnchorPane prefHeight="628.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.Product_Development_Controller">
    <children>
       <Label fx:id="titlelabel" alignment="CENTER" layoutX="143.0" layoutY="47.0" prefHeight="38.0" prefWidth="574.0" text="Product Development Manager Dashboard">
          <font>
