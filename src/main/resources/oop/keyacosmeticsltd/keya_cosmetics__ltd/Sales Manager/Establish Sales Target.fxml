@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="478.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.EstablishSalesTargetController ">
+<AnchorPane prefHeight="478.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.keyacosmeticsltd.keya_cosmetics__ltd.EstablishSalesTargetController">
    <children>
       <Label layoutX="28.0" layoutY="35.0" prefHeight="18.0" prefWidth="85.0" text="Target Name" />
       <Label layoutX="28.0" layoutY="100.0" prefHeight="18.0" prefWidth="67.0" text="Deadline" />
