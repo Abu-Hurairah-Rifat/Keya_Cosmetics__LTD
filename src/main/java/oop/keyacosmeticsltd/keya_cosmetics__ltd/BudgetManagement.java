@@ -62,7 +62,7 @@ public class BudgetManagement {
                 ? allocationdatePicker.getValue().toString()
                 : null;
         if (isInputInvalid(productName, budgetText, department, allocationDate)) {
-            showAlert(Alert.AlertType.ERROR, "Input Error", "All fields must be filled!");
+            showAlert(Alert.AlertType.ERROR, "Input Error", "Please fill up the Field");
             return;
         }
         if (tryAddBudget(productName, budgetText, department, allocationDate)) {
