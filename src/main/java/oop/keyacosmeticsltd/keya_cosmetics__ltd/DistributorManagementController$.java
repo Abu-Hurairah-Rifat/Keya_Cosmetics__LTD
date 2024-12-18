@@ -2,12 +2,19 @@ package oop.keyacosmeticsltd.keya_cosmetics__ltd;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class DistributorManagementController$ {
 
@@ -18,7 +25,7 @@ public class DistributorManagementController$ {
     private Label amountLabel;
 
     @FXML
-    private TableColumn<?, ?> amountTable;
+    private TableColumn<DistributorManagementController$, String> amountTable;
 
     @FXML
     private RadioButton completedRadioButton;
@@ -30,7 +37,7 @@ public class DistributorManagementController$ {
     private Label dateLabel;
 
     @FXML
-    private TableColumn<?, ?> dateTable;
+    private TableColumn<DistributorManagementController$, String> dateTable;
 
     @FXML
     private TextField distributorNameField;
@@ -39,7 +46,7 @@ public class DistributorManagementController$ {
     private Label distributorNameLabel;
 
     @FXML
-    private TableColumn<?, ?> distributorNameTable;
+    private TableColumn<DistributorManagementController$, String> distributorNameTable;
 
     @FXML
     private RadioButton pendingRadioButton;
@@ -54,10 +61,10 @@ public class DistributorManagementController$ {
     private Label statusLabel;
 
     @FXML
-    private TableColumn<?, ?> statusTable;
+    private TableColumn<DistributorManagementController$, String> statusTable;
 
     @FXML
-    private TableView<?> table;
+    private TableView<DistributorManagementController$> table;
 
     @FXML
     private Label tittleDistributorManagementPanel;
@@ -66,7 +73,13 @@ public class DistributorManagementController$ {
     private AnchorPane view;
 
     @FXML
-    void backButtonAction(ActionEvent event) {
+    void backButtonAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Retail Manager DashBoard $.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
 
     }
 
